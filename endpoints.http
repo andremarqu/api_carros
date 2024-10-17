@@ -1,0 +1,30 @@
+
+###
+
+GET http://localhost:3333/carros
+
+###
+
+POST http://localhost:3333/carros
+Content-Type: application/json
+
+{
+    "marca": "Ford do Tio Zé",
+    "cor": "Azul",
+    "placa": "ABC1234"
+}
+
+###
+
+PUT http://localhost:3333/carros/
+Content-Type: application/json
+
+{
+    "marca": "",
+    "cor": "",
+    "placa": ""
+}
+
+###
+
+DELETE http://localhost:3333/carros/
