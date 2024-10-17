@@ -9,9 +9,9 @@ POST http://localhost:3333/carros
 Content-Type: application/json
 
 {
-    "marca": "Ford do Tio Zé",
-    "cor": "Azul",
-    "placa": "ABC1234"
+    "marca": "",
+    "cor": "",
+    "placa": ""
 }
 
 ###

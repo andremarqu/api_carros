@@ -10,18 +10,18 @@ export class DatabaseCarrosRapidos {
   async createCarros(carro) {
     const id = randomUUID();
     console.log('id', id);
-    const nome = carro.nome;
-    const local = carro.local;
-    const descricao = carro.descricao;
+    const marca = carro.marca;
+    const cor = carro.cor;
+    const placa = carro.placa;
 
     await sql`insert into carros (id, marca, cor, placa)
     values (${id}, ${marca}, ${cor}, ${placa})`
   }
 
   async updateCarro(id, carro) {
-    const nome = carro.nome;
-    const local = carro.local;
-    const descricao = carro.descricao;
+    const marca = carro.marca;
+    const cor = carro.cor;
+    const placa = carro.placa;
 
     await sql`update carros set 
         marca = ${marca},

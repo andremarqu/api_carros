@@ -17,7 +17,7 @@ server.register(cors, {
 // CREATE
 server.post('/carros', async (request, reply) => {
     const body = request.body;
-    await databasePostgres.createCarro(body);
+    await databasePostgres.createCarros(body);
     return reply.status(201).send();
 })
 
